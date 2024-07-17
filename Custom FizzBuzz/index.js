@@ -14,8 +14,8 @@ function solution(x, y) {
         }
     }
 }
-// Example Output (for x=3, y=5):
 
+// Example usage
 try {
     solution(3, 5);
 } catch (e) {

@@ -18,3 +18,6 @@ If i is divisible by x only (i.e., i % x === 0), we print "Foo".
 
 3/Multiple of y:
 If i is divisible by y only (i.e., i % y === 0), we print "Bar".
+
+4/Neither:
+If i is not divisible by either x or y, we simply print the number i.

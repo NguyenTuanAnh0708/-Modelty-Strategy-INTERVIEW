@@ -1,4 +1,4 @@
-function isPalindrome(str) {
+function solution(str) {
     const normalizedStr = str.toLowerCase().replace(/[^a-z0-9]/gi, '');
     let left = 0;
     let right = normalizedStr.length - 1;
@@ -13,5 +13,5 @@ function isPalindrome(str) {
 }
 
 // A man, a plan, a canal, Panama
-console.log(isPalindrome("A man, a plan, a canal, Panama")); // true
+console.log(solution("A man, a plan, a canal, Panama")); // true
 
