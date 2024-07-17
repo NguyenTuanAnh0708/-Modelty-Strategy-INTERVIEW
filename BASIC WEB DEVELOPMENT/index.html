@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+    <script src="./customSelect.js" defer></script>
+    <title>BASIC WEB DEVELOPMENT</title>
+  </head>
+  <body>
+    <h1 class="title">BASIC WEB DEVELOPMENT</h1>
+    <form id="myForm">
+      <div class="input-group mt-10">
+        <input type="text" class="input-area" required id="name" />
+        <label for="name" class="label">UserName</label>
+      </div>
+      <br />
+      <div class="input-group mt-10">
+        <input type="number" class="input-area" required id="age" />
+        <label for="age" class="label">Age</label>
+      </div>
+      <div class="selection mt-10">
+        <select class="select" name="select" id="color">
+          <option for="color" value="empty">--Select Color--</option>
+          <option for="color" value="cyan">Cyan</option>
+          <option for="color " value="magenta">Magenta</option>
+          <option for="color" value="yellow">Yellow</option>
+          <option for="color" value="black">Black</option>
+        </select>
+      </div>
+      <button class="button-9" role="button" type="submit">Submit</button>
+    </form>
+
+    <div id="output"></div>
+  </body>
+</html>

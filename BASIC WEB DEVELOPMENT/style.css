@@ -1,0 +1,176 @@
+.mt-10 {
+  margin-top: 10px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group .input-area {
+  outline: none;
+  border: 2px solid #dadce0;
+  padding: 16px 13px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.input-group .input-area:valid + .label {
+  top: -8px;
+  padding: 0 3px;
+  font-size: 14px;
+  color: #8d8d8d;
+}
+
+.input-group .input-area:focus {
+  border: 2px solid royalblue;
+}
+
+.input-group .label {
+  color: #8d8d8d;
+  position: absolute;
+  top: 20px;
+  left: 13px;
+  background: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+.input-group .input-area:focus + .label {
+  top: -8px;
+  padding: 0 3px;
+  font-size: 14px;
+  color: royalblue;
+}
+
+/* reset default html style */
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+/* hide default select tag */
+.select {
+  display: none;
+}
+
+/* styling for custom select */
+.custom-select {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  width: 300px;
+  height: 40px;
+  background: #151515;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px 5px;
+  position: relative;
+}
+
+/* arrow down */
+.custom-select:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  z-index: 1;
+  transform: rotateZ(45deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-select.option-active:after {
+  transform: rotateZ(-135deg);
+  top: 17px;
+}
+
+.custom-select-container {
+  display: none;
+}
+
+.custom-select-container.show {
+  display: block;
+}
+
+.custom-select-item {
+  margin: 1px 0;
+  width: 300px;
+  height: 40px;
+  background: #151515;
+  color: #fff;
+  padding: 0 20px;
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.custom-select-item:hover {
+  background: salmon;
+}
+
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+
+.title {
+  text-align: center;
+}
+
+#myForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
